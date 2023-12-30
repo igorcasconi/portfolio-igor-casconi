@@ -1,7 +1,9 @@
+import { Header } from "@/components/header";
+
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <p className="font-afacad text-3xl">Hi, Igor Casconi</p>
+    <main className="flex min-h-screen w-100 flex-col items-center">
+      <Header />
     </main>
   );
 }
