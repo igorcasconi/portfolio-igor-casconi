@@ -7,7 +7,7 @@ import InstagramIcon from "@/icons/instagram-icon";
 
 const Header = () => {
   return (
-    <div className="box bg-gradient-to-l from-primary lg:h-[420px] xl:h-80 sm:h-1/2 w-full lg:px-40 sm:px-4 py-3 lg:relative shadow-xl">
+    <div className="box bg-gradient-to-l from-primary lg:h-[420px] xl:h-80 sm:h-1/2 w-full lg:px-40 sm:px-4 py-3 lg:relative shadow-xl z-20">
       <div className="flex flex-row justify-between">
         <h3 className="text-white font-afacad text-xl">Igor Casconi</h3>
 
@@ -28,16 +28,16 @@ const Header = () => {
           />
         </div>
 
-        <div className="box lg:mt-32 sm:mt-[20px] lg:ml-80 xl:ml-64 lg:w-8/12 animate__animated animate__fadeInRight">
+        <div className="box lg:mt-56 xl:mt-32 sm:mt-[20px] lg:ml-80 xl:ml-64 lg:w-8/12 animate__animated animate__fadeInRight">
           <h2 className="text-white font-afacad text-4xl font-medium sm:text-center lg:text-left">
             Desenvolvedor Mobile & Front-end
           </h2>
 
-          <p className="text-white font-afacad lg:text-xl sm:text-lg font-regular mt-4 xl:pb-4">
+          <p className="text-white font-afacad lg:text-xl sm:text-lg font-regular lg:mt-1 xl:mt-4 sm:mt-4 xl:pb-4 sm:pb-4">
             Sou desenvolvedor mobile e front-end com formação em Bacharelado em
-            Ciência da Computação pela UNIVEM. Já trabalhei no desenvolvimento
-            de soluções digitais para diversos segmentos de mercado, como
-            educação, saúde, e-commerce e entretenimento.
+            Ciência da Computação pela UNIVEM. Com experiência no
+            desenvolvimento de soluções digitais para diversos segmentos de
+            mercado, como educação, saúde, e-commerce e entretenimento.
           </p>
 
           <div className="flex flex-row items-center lg:mt-8 xl:mt-10 md:mt-2">
