@@ -17,8 +17,8 @@ const AboutMe = () => {
         SOBRE MIM
       </h3>
 
-      <div className="sm:box lg:flex flex-row w-full justify-between">
-        <div className="mt-6 lg:min-w-72 xl:w-96">
+      <div className="sm:box lg:flex flex-row w-full justify-between ">
+        <div className="mt-6 lg:min-w-72 xl:w-96 animate__animated animate__fadeInLeft">
           <div className="flex flex-row justify-start mb-2">
             <p className="text-white text-[20px] font-afacad font-medium">
               Nome
@@ -56,7 +56,7 @@ const AboutMe = () => {
           </div>
         </div>
 
-        <div className="sm:box lg:mt-6 lg:min-w-72 xl:w-96">
+        <div className="sm:box lg:mt-6 lg:min-w-72 xl:w-96 animate__animated animate__fadeInLeft">
           <div className="flex flex-row justify-start mb-2">
             <p className="text-white text-[20px] font-afacad font-medium">
               E-mail
@@ -85,7 +85,7 @@ const AboutMe = () => {
           </div>
         </div>
 
-        <div className="sm:box lg:flex flex-row">
+        <div className="sm:box lg:flex flex-row animate__animated animate__fadeInRight">
           <div className="sm:box sm:mt-6 lg:w-72 xl:w-96">
             <div className="sm:box ">
               <div className="flex flex-row">
@@ -116,7 +116,7 @@ const AboutMe = () => {
             </div>
           </div>
 
-          <div className="sm:box sm:mt-6 lg:w-64">
+          <div className="sm:box sm:mt-6 lg:w-64 animate__animated animate__fadeInRight">
             <div className="sm:box">
               <div className="flex flex-row">
                 <div className="box">

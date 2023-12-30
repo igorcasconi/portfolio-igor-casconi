@@ -40,7 +40,7 @@ const Header = () => {
             mercado, como educação, saúde, e-commerce e entretenimento.
           </p>
 
-          <div className="flex flex-row items-center lg:mt-8 xl:mt-10 md:mt-2">
+          <div className="flex flex-row items-center lg:mt-8 xl:mt-10 md:mt-2 xl:mt-1">
             <a href="https://github.com/igorcasconi/" target="_blank">
               <GithubIcon
                 fill="white"
