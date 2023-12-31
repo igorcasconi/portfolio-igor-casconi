@@ -20,7 +20,7 @@ const Header = () => {
       </div>
 
       <div className="flex sm:flex-col lg:flex-row lg:justify-center sm:items-center">
-        <div className="mt-6 z-10 lg:absolute lg:-bottom-20 lg:left-40 border-2 rounded-full  border-primary animate__animated animate__fadeInLeft">
+        <div className="mt-6 z-10 lg:absolute lg:-bottom-20 lg:left-20 xl:left-40 border-2 rounded-full  border-primary animate__animated animate__fadeInLeft">
           <Image
             src={profileIgor}
             alt="profile-igor"
@@ -28,7 +28,7 @@ const Header = () => {
           />
         </div>
 
-        <div className="box lg:mt-56 xl:mt-32 sm:mt-[20px] lg:ml-80 xl:ml-64 lg:w-8/12 animate__animated animate__fadeInRight">
+        <div className="box lg:mt-[190px] xl:mt-32 sm:mt-[20px] lg:ml-60 xl:ml-64 lg:w-8/12 animate__animated animate__fadeInRight">
           <h2 className="text-white font-afacad text-4xl font-medium sm:text-center lg:text-left">
             Desenvolvedor Mobile & Front-end
           </h2>
@@ -40,7 +40,7 @@ const Header = () => {
             mercado, como educação, saúde, e-commerce e entretenimento.
           </p>
 
-          <div className="flex flex-row items-center lg:mt-8 xl:mt-10 md:mt-2 xl:mt-1">
+          <div className="flex flex-row items-center lg:mt-2 xl:mt-10 xxl:mt-2 xxxl:mt-10 md:mt-2">
             <a href="https://github.com/igorcasconi/" target="_blank">
               <GithubIcon
                 fill="white"
