@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import profileIgor from "@/assets/profile-igor.jpg";
+import profileIgor from "../../../public/assets/profile-igor.jpg";
 import GithubIcon from "@/icons/github-icon";
 import LinkedinIcon from "@/icons/linkedin-icon";
 import InstagramIcon from "@/icons/instagram-icon";
