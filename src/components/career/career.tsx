@@ -18,11 +18,11 @@ const Career = () => {
           <h5 className="text-primary font-afacad font-medium text-[20px] -mt-1">
             Desenvolvedor Mobile & Front-end C-Level
           </h5>
-          <p className="text-gray-500 font-afacad font-regular text-[16px] -mt-1">
+          <p className="text-gray-300 font-afacad font-regular text-[16px] -mt-1">
             setembro/2020 - até o momento
           </p>
 
-          <p className="text-gray-500 font-afacad font-regular text-[18px] mt-4">
+          <p className="text-gray-300 font-afacad font-regular text-[18px] mt-4">
             Na Nav9.tech, desenvolvo e mantenho aplicativos e plataformas web
             com React JS e React Native, utilizando tecnologias como superset
             TypeScript, Next.JS, Redux, e GraphQL. Também tenho experiência com
@@ -48,11 +48,11 @@ const Career = () => {
           <h5 className="text-primary font-afacad font-medium text-[20px] -mt-1">
             Analista de Banco de Dados
           </h5>
-          <p className="text-gray-500 font-afacad font-regular text-[16px] -mt-1">
+          <p className="text-gray-300 font-afacad font-regular text-[16px] -mt-1">
             setembro/2019 - agosto/2020
           </p>
 
-          <p className="text-gray-500 font-afacad font-regular text-[18px] mt-4">
+          <p className="text-gray-300 font-afacad font-regular text-[18px] mt-4">
             Responsável pelos dados de novos clientes que a empresa Webline
             Sistema está recebendo. Esses dados são realizado o tratamento e
             transferidos para a estrutura do sistema que o cliente adquiriu.
@@ -72,11 +72,11 @@ const Career = () => {
           <h5 className="text-primary font-afacad font-medium text-[20px] -mt-1">
             Analista de Suporte de TI
           </h5>
-          <p className="text-gray-500 font-afacad font-regular text-[16px] -mt-1">
+          <p className="text-gray-300 font-afacad font-regular text-[16px] -mt-1">
             dezembro/2016 - setembro/2019
           </p>
 
-          <p className="text-gray-500 font-afacad font-regular text-[18px] mt-4">
+          <p className="text-gray-300 font-afacad font-regular text-[18px] mt-4">
             Responsável pelo atendimento ao cliente para
             manutenções/atualizações no sistema adquirido a partir de acesso
             remoto ou ligações. Iniciado pelo o estágio no final de 2016 e fui
