@@ -19,6 +19,8 @@
 }
 
 body {
+  width: 100vw;
+  overflow-x: hidden;
   color: rgb(var(--foreground-rgb));
   background: rgb(48, 46, 46);
   background: radial-gradient(

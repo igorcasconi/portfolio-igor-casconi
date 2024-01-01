@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import colors from "tailwindcss/colors";
 
 const config: Config = {
   mode: "jit",
@@ -19,6 +20,7 @@ const config: Config = {
       },
     },
     colors: {
+      ...colors,
       primary: "#0070ff",
       secondary: "#161430",
     },
@@ -27,6 +29,8 @@ const config: Config = {
       md: "640px",
       lg: "1024px",
       xl: "1380px",
+      xxl: "1420px",
+      xxxl: "1600px",
     },
   },
   plugins: [],
