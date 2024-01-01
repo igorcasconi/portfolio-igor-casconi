@@ -1,19 +1,19 @@
-import { differenceInCalendarYears } from "date-fns";
+import { differenceInYears } from "date-fns";
 
 const AboutMe = () => {
-  const myAge = differenceInCalendarYears(new Date(), new Date(1997, 9, 26));
-  const experienceYears = differenceInCalendarYears(
-    new Date(),
-    new Date(2016, 11, 20)
-  );
-  const developmentYears = differenceInCalendarYears(
+  const myAge = differenceInYears(new Date(), new Date(1997, 9, 26));
+  const experienceYears = differenceInYears(new Date(), new Date(2016, 11, 20));
+  const developmentYears = differenceInYears(
     new Date(),
     new Date(2019, 10, 10)
   );
 
   return (
     <div className="flex flex-col sm:mt-4 md:mt-10 lg:mt-32 xl:mt-24 justify-start w-full xl:px-40 lg:px-16 sm:px-4">
-      <h3 className="text-primary text-[45px] font-afacad font-medium text-center">
+      <h3
+        className="text-primary text-[45px] font-afacad font-medium text-center"
+        id="sobre-mim"
+      >
         SOBRE MIM
       </h3>
 
