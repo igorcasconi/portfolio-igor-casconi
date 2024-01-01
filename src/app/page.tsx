@@ -1,4 +1,7 @@
+"use client";
+
 import { AboutMe, Career, Header, Skills } from "@/components";
+import { Portfolio } from "@/components/portfolio";
 
 export default function Home() {
   return (
@@ -7,6 +10,7 @@ export default function Home() {
       <AboutMe />
       <Skills />
       <Career />
+      <Portfolio />
     </main>
   );
 }

@@ -11,7 +11,10 @@ import TypescriptIcon from "@/icons/typescript-icon";
 const Skills = () => {
   return (
     <div className="flex flex-col sm:mt-4 md:mt-10 lg:mt-32 xl:mt-24 justify-start w-full xl:px-40 lg:px-16 sm:px-4 ">
-      <h3 className="text-primary text-[45px] font-afacad font-medium text-center">
+      <h3
+        className="text-primary text-[45px] font-afacad font-medium text-center"
+        id="skills"
+      >
         MINHAS SKILLS
       </h3>
 
