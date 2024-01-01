@@ -1,24 +1,24 @@
-import { differenceInCalendarYears } from "date-fns";
+import { differenceInYears } from "date-fns";
 
 const AboutMe = () => {
-  const myAge = differenceInCalendarYears(new Date(), new Date(1997, 9, 26));
-  const experienceYears = differenceInCalendarYears(
-    new Date(),
-    new Date(2016, 11, 20)
-  );
-  const developmentYears = differenceInCalendarYears(
+  const myAge = differenceInYears(new Date(), new Date(1997, 9, 26));
+  const experienceYears = differenceInYears(new Date(), new Date(2016, 11, 20));
+  const developmentYears = differenceInYears(
     new Date(),
     new Date(2019, 10, 10)
   );
 
   return (
     <div className="flex flex-col sm:mt-4 md:mt-10 lg:mt-32 xl:mt-24 justify-start w-full xl:px-40 lg:px-16 sm:px-4">
-      <h3 className="text-primary text-[45px] font-afacad font-medium text-center">
+      <h3
+        className="text-primary text-[45px] font-afacad font-medium text-center"
+        id="sobre-mim"
+      >
         SOBRE MIM
       </h3>
 
-      <div className="sm:box lg:flex flex-row w-full justify-between">
-        <div className="mt-6 lg:min-w-72 xl:w-96">
+      <div className="sm:box lg:flex flex-row w-full justify-between ">
+        <div className="mt-6 lg:min-w-72 xl:w-96 animate__animated animate__fadeInLeft">
           <div className="flex flex-row justify-start mb-2">
             <p className="text-white text-[20px] font-afacad font-medium">
               Nome
@@ -56,7 +56,7 @@ const AboutMe = () => {
           </div>
         </div>
 
-        <div className="sm:box lg:mt-6 lg:min-w-72 xl:w-96">
+        <div className="sm:box lg:mt-6 lg:min-w-72 xl:w-96 animate__animated animate__fadeInLeft">
           <div className="flex flex-row justify-start mb-2">
             <p className="text-white text-[20px] font-afacad font-medium">
               E-mail
@@ -85,7 +85,7 @@ const AboutMe = () => {
           </div>
         </div>
 
-        <div className="sm:box lg:flex flex-row">
+        <div className="sm:box lg:flex flex-row animate__animated animate__fadeInRight">
           <div className="sm:box sm:mt-6 lg:w-72 xl:w-96">
             <div className="sm:box ">
               <div className="flex flex-row">
@@ -116,7 +116,7 @@ const AboutMe = () => {
             </div>
           </div>
 
-          <div className="sm:box sm:mt-6 lg:w-64">
+          <div className="sm:box sm:mt-6 lg:w-64 animate__animated animate__fadeInRight">
             <div className="sm:box">
               <div className="flex flex-row">
                 <div className="box">
