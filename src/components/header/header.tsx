@@ -32,9 +32,9 @@ const Header = () => {
           </button>
           <ul
             ref={refMenu}
-            className={`lg:flex lg:flex-row text-xl font-afacad sm:${
-              isOpenMenu ? "block" : "hidden"
-            } ${
+            className={`lg:flex lg:flex-row text-xl font-afacad
+            ${isOpenMenu ? "md:block sm:block" : "sm:hidden md:hidden"} 
+            ${
               isOpenMenu &&
               "bg-slate-700 p-4 absolute top-9 right-0 z-[99] rounded-md w-[300px] h-auto animate__animated animate__fadeInDown text-[40px]"
             }`}
