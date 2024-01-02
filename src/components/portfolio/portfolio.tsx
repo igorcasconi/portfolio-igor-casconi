@@ -137,12 +137,8 @@ const Portfolio = () => {
         </Link>
       </div>
 
-      <Modal
-        isOpen={isModalOpen}
-        onClose={handleCloseModal}
-        style="h-auto min-h-[300px] w-[600px]"
-      >
-        <div className="w-full h-full">
+      <Modal isOpen={isModalOpen} onClose={handleCloseModal} style="w-[600px]">
+        <div>
           <div className="py-3 px-4">
             <h4 className="text-primary font-afacad font-bold text-[30px]">
               {dataModal.titleModal}
