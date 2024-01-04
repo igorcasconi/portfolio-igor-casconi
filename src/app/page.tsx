@@ -1,6 +1,13 @@
 "use client";
 
-import { AboutMe, Career, Header, Skills } from "@/components";
+import {
+  AboutMe,
+  Articles,
+  Career,
+  Footer,
+  Header,
+  Skills,
+} from "@/components";
 import { Portfolio } from "@/components/portfolio";
 
 export default function Home() {
@@ -11,6 +18,8 @@ export default function Home() {
       <Skills />
       <Career />
       <Portfolio />
+      <Articles />
+      <Footer />
     </main>
   );
 }
