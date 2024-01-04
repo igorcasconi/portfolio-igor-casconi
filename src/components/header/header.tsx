@@ -48,8 +48,11 @@ const Header = () => {
             <li className="mr-2 sm:mt-2 md:mt-0">
               <a href="#carreira">Carreira</a>
             </li>
-            <li className="sm:mt-2 md:mt-0">
+            <li className="mr-2 sm:mt-2 md:mt-0">
               <a href="#portfolio">Portfólio</a>
+            </li>
+            <li className="sm:mt-2 md:mt-0">
+              <a href="#articles">Artigos</a>
             </li>
           </ul>
         </div>
