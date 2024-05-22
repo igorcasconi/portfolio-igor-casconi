@@ -5,6 +5,9 @@ import BancoAbcLandscape from "../../../public/assets/bancoabc-landscape.png";
 import UfcLandscape from "../../../public/assets/ufc-fantasy-landscape.jpg";
 import LivroCaixaLandscape from "../../../public/assets/livrocaixa-landscape.png";
 import ComposifyLandscape from "../../../public/assets/composify-landscape.png";
+import CereagroLandscape from "../../../public/assets/cereagro-landscape.png";
+import NanoLandscape from "../../../public/assets/nano-landscape.png";
+import DigitalFavelaLandscape from "../../../public/assets/digitalfavela-landscape.png";
 import AZImage from "../../../public/assets/az.png";
 import Pay from "../../../public/assets/pay.png";
 import Composify from "../../../public/assets/composify.jpg";
@@ -12,6 +15,9 @@ import ABC from "../../../public/assets/abc.png";
 import UFC from "../../../public/assets/ufc-fantasy.jpg";
 import Atlas from "../../../public/assets/atlas.png";
 import LivroCaixa from "../../../public/assets/livrocaixa.png";
+import Cereagro from "../../../public/assets/cereagro-logo.png";
+import Nano from "../../../public/assets/nano-logo.jpeg";
+import DigitalFavela from "../../../public/assets/digitalfavela-logo.jpeg";
 
 export type DataModalPortfolioKey =
   | "az"
@@ -20,7 +26,10 @@ export type DataModalPortfolioKey =
   | "composify"
   | "ufc"
   | "abc"
-  | "livrocaixa";
+  | "livrocaixa"
+  | "cereagro"
+  | "digitalfavela"
+  | "nano";
 
 export const DataModalPortfolio = {
   az: {
@@ -69,7 +78,7 @@ export const DataModalPortfolio = {
       "Integrado com pagamentos via pix, cartão de crédito e boleto",
       "Integração da plataforma do cliente dentro do aplicativo AZ com o funcionamento do Push Notification do app para acessar diretamento o módulo do Lex Pay",
     ],
-    link: "https://welcome.atlasgov.com/",
+    link: "",
   },
   composify: {
     title: "Composify PRO",
@@ -98,7 +107,7 @@ export const DataModalPortfolio = {
       "Correções das listagens de card com os lutadores",
       "Desenvolvimento de compartilhar imagem com todos os palpites feito pelo usuário",
     ],
-    link: "https://composify.com.br/",
+    link: "https://www.ufcfantasy.com.br/",
   },
   abc: {
     title: "Banco ABC",
@@ -112,7 +121,7 @@ export const DataModalPortfolio = {
       "Implementação de validação de documentos do usuário para solicitar a abertura de crédito consignado com biblioteca de terceiros",
       "Manutenção de formulários para abertura/edição de crédito consignado",
     ],
-    link: "https://composify.com.br/",
+    link: "https://www.abcbrasil.com.br/",
   },
   livrocaixa: {
     title: "Livro Caixa",
@@ -129,5 +138,51 @@ export const DataModalPortfolio = {
       "Desenvolvimento de exportação em excel dos relatórios",
     ],
     link: "https://play.google.com/store/apps/details?id=com.reacttsproject",
+  },
+  cereagro: {
+    title: "Cereagro",
+    titleModal: "Cereagro",
+    image: Cereagro,
+    imageModal: CereagroLandscape,
+    description:
+      "Sistema admin e aplicativo para geração de contratos na área de agronomia, com cadastros de clientes, produtos, usuários, transportadoras, etc.",
+    work: "Desenvolvimento de novas features e alteração no projeto.",
+    features: [
+      "Refatoração do cadastro de contratos",
+      "Novos formatos de relatórios",
+      "Cadastro e realização de calculos para fechamento do contrato",
+      "Desenvolvimento inicial do aplicativo em React Native",
+    ],
+    link: "https://www.cereagro.com.br/",
+  },
+  digitalfavela: {
+    title: "Digital Favela",
+    titleModal: "Digital Favela",
+    image: DigitalFavela,
+    imageModal: DigitalFavelaLandscape,
+    description:
+      "Plataforma de cadastro de campanhas e influencers da favela, conectando criadores e criadoras de conteúdo das periferias com diversas empresas.",
+    work: "Desenvolvimento de novo sistema para cadastro de influencers e campanhas das empresas.",
+    features: [
+      "Desenvolvimento do cadastro do influencer e campanhas",
+      "Desenvolvimento para raspagem de dados nas principais redes sociais (Instagram, Tiktok, Youtube, Kwai)",
+    ],
+    link: "https://digitalfavela.com.br",
+  },
+  nano: {
+    title: "Nano",
+    titleModal: "Nano Influenciadores",
+    image: Nano,
+    imageModal: NanoLandscape,
+    description:
+      "Plataforma de cadastro de campanhas e influencers, sendo que o influencer consegue obter prêmios com as parcerias geradas.",
+    work: "Desenvolvimento de novo sistema para cadastro de influencers e campanhas das empresas.",
+    features: [
+      "Desenvolvimento do cadastro do influencer e campanhas",
+      "Desenvolvimento para raspagem de dados do Instagram",
+      "Desenvolvimento do OptIn com o Facebook - Meta",
+      "Desenvolvimento de ranking e pontuação através das postagens do influenciador relacionadas a campanha",
+    ],
+    link: "https://www.nanoinfluenciadores.com.br/",
   },
 };
