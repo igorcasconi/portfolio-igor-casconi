@@ -5,7 +5,6 @@ import { Modal } from "../modal";
 import { DataModalPortfolio, DataModalPortfolioKey } from "./data-modal";
 
 import { CheckIcon, LinkIcon } from "@heroicons/react/16/solid";
-import GithubIcon from "@/icons/github-icon";
 import Link from "next/link";
 
 const Portfolio = () => {
@@ -116,6 +115,48 @@ const Portfolio = () => {
 
         <div
           className="w-[150px] h-[180px] bg-gray-800 flex flex-col items-center justify-between rounded-md cursor-pointer shadow-xl ml-6 mt-6"
+          onClick={handleOpenModal("cereagro")}
+        >
+          <Image
+            src={DataModalPortfolio.cereagro.image}
+            alt="Livro Caixa"
+            className="w-[150px] h-[150px] rounded-tr-md rounded-tl-md object-cover"
+          />
+          <h3 className="text-primary text-[20px] font-afacad font-bold">
+            {DataModalPortfolio.cereagro.title}
+          </h3>
+        </div>
+
+        <div
+          className="w-[150px] h-[180px] bg-gray-800 flex flex-col items-center justify-between rounded-md cursor-pointer shadow-xl ml-6 mt-6"
+          onClick={handleOpenModal("digitalfavela")}
+        >
+          <Image
+            src={DataModalPortfolio.digitalfavela.image}
+            alt="Livro Caixa"
+            className="w-[150px] h-[150px] rounded-tr-md rounded-tl-md object-cover"
+          />
+          <h3 className="text-primary text-[20px] font-afacad font-bold">
+            {DataModalPortfolio.digitalfavela.title}
+          </h3>
+        </div>
+
+        <div
+          className="w-[150px] h-[180px] bg-gray-800 flex flex-col items-center justify-between rounded-md cursor-pointer shadow-xl ml-6 mt-6"
+          onClick={handleOpenModal("nano")}
+        >
+          <Image
+            src={DataModalPortfolio.nano.image}
+            alt="Livro Caixa"
+            className="w-[150px] h-[150px] rounded-tr-md rounded-tl-md object-cover"
+          />
+          <h3 className="text-primary text-[20px] font-afacad font-bold">
+            {DataModalPortfolio.nano.title}
+          </h3>
+        </div>
+
+        <div
+          className="w-[150px] h-[180px] bg-gray-800 flex flex-col items-center justify-between rounded-md cursor-pointer shadow-xl ml-6 mt-6"
           onClick={handleOpenModal("livrocaixa")}
         >
           <Image
@@ -147,7 +188,9 @@ const Portfolio = () => {
             <Image
               src={dataModal.imageModal}
               alt={dataModal.titleModal}
-              className="h-[250px] w-full object-cover"
+              className={`h-[250px] w-full ${
+                dataModal.title === "Nano" ? "object-contain" : "object-cover"
+              }`}
             />
 
             <p className="text-gray-900 font-afacad font-medium mt-2">
