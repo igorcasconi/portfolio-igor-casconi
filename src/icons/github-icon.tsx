@@ -17,7 +17,6 @@ const GithubIcon = (props: React.SVGProps<SVGSVGElement>) => (
       style={{
         mixBlendMode: "normal",
       }}
-      textAnchor="none"
       transform="scale(5.12)"
     />
   </svg>

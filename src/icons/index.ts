@@ -8,3 +8,4 @@ export * from "./kotlin-icon";
 export * from "./nodejs-icon";
 export * from "./java-icon";
 export * from "./xcode-icon";
+export * from "./flutter-icon";

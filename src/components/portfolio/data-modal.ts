@@ -18,6 +18,7 @@ import LivroCaixa from "../../../public/assets/livrocaixa.png";
 import Cereagro from "../../../public/assets/cereagro-logo.png";
 import Nano from "../../../public/assets/nano-logo.jpeg";
 import DigitalFavela from "../../../public/assets/digitalfavela-logo.jpeg";
+import Frigelar from "../../../public/assets/frigelar.png";
 
 export type DataModalPortfolioKey =
   | "az"
@@ -29,9 +30,24 @@ export type DataModalPortfolioKey =
   | "livrocaixa"
   | "cereagro"
   | "digitalfavela"
-  | "nano";
+  | "nano"
+  | "frigelar";
 
 export const DataModalPortfolio = {
+  frigelar: {
+    title: "Frigelar",
+    titleModal: "Plataforma de Vendas para Representantes (ecommerce)",
+    image: Frigelar,
+    imageModal: Frigelar,
+    description:
+      "Plataforma ecommerce para uso de representantes de vendas da empresa, com funcionalidade de pesquisa de produtos, visualizar promoções por regiões, solicitar quantidade de produtos, geração de pedidos/orçamento com controle de carrinho de compras!",
+    work: "O aplicativo foi desenvolvido em Flutter para as plataformas web e mobile (Android/iOS), com a responsabilidade de desenvolver features para o projeto",
+    features: [
+      "Desenvolvimento de tela com integração com a API da empresa",
+      "Desenvolvimento das telas utilizando Figma e em conjunto com o Claude Code",
+    ],
+    link: "",
+  },
   az: {
     title: "Aluno AZ",
     titleModal: "Aluno AZ",

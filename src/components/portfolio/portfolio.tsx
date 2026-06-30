@@ -31,6 +31,20 @@ const Portfolio = () => {
       <div className="flex flex-row sm:items-center md:items-left lg:justify-center flex-wrap">
         <div
           className="w-[150px] h-[180px] bg-gray-800 flex flex-col items-center justify-between rounded-md cursor-pointer shadow-xl ml-6 mt-6"
+          onClick={handleOpenModal("frigelar")}
+        >
+          <Image
+            src={DataModalPortfolio.frigelar.image}
+            alt="Aluno AZ"
+            className="w-[150px] h-[150px] rounded-tr-md rounded-tl-md "
+          />
+          <h3 className="text-primary text-[20px] font-afacad font-bold">
+            {DataModalPortfolio.frigelar.title}
+          </h3>
+        </div>
+
+        <div
+          className="w-[150px] h-[180px] bg-gray-800 flex flex-col items-center justify-between rounded-md cursor-pointer shadow-xl ml-6 mt-6"
           onClick={handleOpenModal("az")}
         >
           <Image
@@ -213,14 +227,16 @@ const Portfolio = () => {
               </div>
             ))}
 
-            <Link href={dataModal.link} target="_blank">
-              <div className="flex items-center">
-                <LinkIcon className="h-[20px] w-[20px] text-primary mt-4" />
-                <p className="text-primary font-afacad font-bold text-[18px] mt-4">
-                  Acesse aqui o site
-                </p>
-              </div>
-            </Link>
+            {dataModal.link && (
+              <Link href={dataModal.link} target="_blank">
+                <div className="flex items-center">
+                  <LinkIcon className="h-[20px] w-[20px] text-primary mt-4" />
+                  <p className="text-primary font-afacad font-bold text-[18px] mt-4">
+                    Acesse aqui o site
+                  </p>
+                </div>
+              </Link>
+            )}
           </div>
         </div>
       </Modal>
