@@ -26,14 +26,30 @@ const Career = () => {
           </p>
 
           <p className="text-gray-300 font-afacad font-regular text-[18px] mt-4">
-            Na Nav9.tech, desenvolvo e mantenho aplicativos e plataformas web
-            com React JS e React Native, utilizando tecnologias como superset
-            TypeScript, Next.JS, Redux, e GraphQL. Também tenho experiência com
-            desenvolvimento nativo para Android em Java e Kotlin, e com
-            ferramentas de notificação, analytics, e crashlytics, como Amazon
-            SNS, Firebase, e Amazon PINPOINT. Além disso, contribuo para a
-            criação de documentações, a realização de pair programming, e o
-            compartilhamento de conhecimentos com a equipe.
+            Atuo como Desenvolvedor Mobile e Front-end, com experiência no
+            desenvolvimento e manutenção de aplicações para Android, iOS, Web e
+            Flutter Web. Na Nav9.tech, desenvolvo soluções utilizando React JS,
+            React Native, Flutter e Next.js, com foco em aplicações escaláveis,
+            performáticas e de alta qualidade. Tenho sólida experiência com
+            TypeScript, Redux, GraphQL e integração com APIs, além de atuar no
+            desenvolvimento de plataformas web e aplicativos móveis.
+            Recentemente, participei do desenvolvimento de um projeto de
+            e-commerce utilizando Flutter para Web e Mobile, contribuindo na
+            implementação de funcionalidades, arquitetura da aplicação,
+            integração de serviços e otimização da experiência do usuário em
+            diferentes plataformas. Também possuo experiência com
+            desenvolvimento nativo Android utilizando Java e Kotlin, além da
+            integração de serviços como Firebase (Analytics, Crashlytics e Cloud
+            Messaging), Amazon SNS e Amazon Pinpoint para monitoramento,
+            notificações e análise de comportamento dos usuários. Tenho forte
+            atuação na automação de processos de entrega contínua (CI/CD),
+            configurando e mantendo pipelines no Bitrise, utilizando Fastlane
+            para automação de builds, assinaturas e publicações de aplicativos
+            nas lojas Google Play e Apple App Store. Além do desenvolvimento,
+            colaboro ativamente com a equipe por meio de code reviews, pair
+            programming, elaboração de documentação técnica, definição de boas
+            práticas e compartilhamento de conhecimento, contribuindo para a
+            evolução contínua dos projetos e do time.
           </p>
         </div>
 
