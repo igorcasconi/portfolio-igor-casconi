@@ -1,11 +1,17 @@
+"use client";
+
 import { differenceInYears } from "date-fns";
+import { useLanguage } from "@/contexts/language-context";
+import { aboutMe } from "@/locales/about-me";
 
 const AboutMe = () => {
+  const { language } = useLanguage();
+  const dict = aboutMe[language];
   const myAge = differenceInYears(new Date(), new Date(1997, 9, 26));
   const experienceYears = differenceInYears(new Date(), new Date(2016, 11, 20));
   const developmentYears = differenceInYears(
     new Date(),
-    new Date(2019, 10, 10)
+    new Date(2019, 10, 10),
   );
 
   return (
@@ -14,23 +20,23 @@ const AboutMe = () => {
         className="text-primary text-[45px] font-afacad font-medium text-center"
         id="sobre-mim"
       >
-        SOBRE MIM
+        {dict.title}
       </h3>
 
       <div className="sm:box lg:flex flex-row w-full justify-between ">
         <div className="mt-6 lg:min-w-72 xl:w-96 animate__animated animate__fadeInLeft">
           <div className="flex flex-row justify-start mb-2">
             <p className="text-white text-[20px] font-afacad font-medium">
-              Nome
+              {dict.nameLabel}
             </p>
             <p className="text-primary text-[20px] font-afacad text-regular ml-2">
-              Igor Casconi de Oliveira
+              {dict.name}
             </p>
           </div>
 
           <div className="flex flex-row justify-start mb-2 ">
             <p className="text-white text-[20px] font-afacad font-medium">
-              Idade
+              {dict.ageLabel}
             </p>
             <p className="text-primary text-[20px] font-afacad text-regular ml-2">
               {myAge}
@@ -39,19 +45,19 @@ const AboutMe = () => {
 
           <div className="flex flex-row justify-start mb-2 ">
             <p className="text-white text-[20px] font-afacad font-medium">
-              Cidade/Estado
+              {dict.cityLabel}
             </p>
             <p className="text-primary text-[20px] font-afacad text-regular ml-2">
-              Marília/SP
+              {dict.city}
             </p>
           </div>
 
           <div className="flex flex-row justify-start mb-2 ">
             <p className="text-white text-[20px] font-afacad font-medium">
-              Nacionalidade
+              {dict.nationalityLabel}
             </p>
             <p className="text-primary text-[20px] font-afacad text-regular ml-2">
-              Brasileiro
+              {dict.nationality}
             </p>
           </div>
         </div>
@@ -59,28 +65,28 @@ const AboutMe = () => {
         <div className="sm:box lg:mt-6 lg:min-w-72 xl:w-96 animate__animated animate__fadeInLeft">
           <div className="flex flex-row justify-start mb-2">
             <p className="text-white text-[20px] font-afacad font-medium">
-              E-mail
+              {dict.emailLabel}
             </p>
             <p className="text-primary text-[20px] font-afacad text-regular ml-2">
-              igor492@gmail.com
+              {dict.email}
             </p>
           </div>
 
           <div className="flex flex-row justify-start mb-2">
             <p className="text-white text-[20px] font-afacad font-medium">
-              Modo de trabalho atual
+              {dict.workModeLabel}
             </p>
             <p className="text-primary text-[20px] font-afacad text-regular ml-2">
-              Remoto
+              {dict.workMode}
             </p>
           </div>
 
           <div className="flex flex-row justify-start mb-2">
             <p className="text-white text-[20px] font-afacad font-medium">
-              Freelance
+              {dict.freelanceLabel}
             </p>
             <p className="text-primary text-[20px] font-afacad text-regular ml-2">
-              Disponível
+              {dict.freelanceStatus}
             </p>
           </div>
         </div>
@@ -96,7 +102,7 @@ const AboutMe = () => {
                   <div className="w-10 h-[1px] border-white border-[1px] -mt-2 mr-1" />
                 </div>
                 <p className="text-white font-bold font-afacad text-[20px] mt-[11px] w-40 ml-2 leading-6">
-                  Anos de experiência na área
+                  {dict.experienceYearsText}
                 </p>
               </div>
             </div>
@@ -110,7 +116,7 @@ const AboutMe = () => {
                   <div className="w-10 h-[1px] border-white border-[1px] -mt-2 mr-1" />
                 </div>
                 <p className="text-white font-bold font-afacad text-[20px] mt-[11px] w-40 ml-2 leading-6">
-                  Anos trabalhando como desenvolvedor
+                  {dict.developmentYearsText}
                 </p>
               </div>
             </div>
@@ -126,7 +132,7 @@ const AboutMe = () => {
                   <div className="w-14 h-[1px] border-white border-[1px] -mt-2 mr-1" />
                 </div>
                 <p className="text-white font-bold font-afacad text-[20px] mt-[11px] w-44 ml-2 leading-6">
-                  Projetos profissionais participados
+                  {dict.professionalProjectsText}
                 </p>
               </div>
             </div>
@@ -140,7 +146,7 @@ const AboutMe = () => {
                   <div className="w-16 h-[1px] border-white border-[1px] -mt-2 mr-1" />
                 </div>
                 <p className="text-white font-bold font-afacad text-[20px] mt-[11px] w-40 ml-2 leading-6">
-                  Projetos pessoais
+                  {dict.personalProjectsText}
                 </p>
               </div>
             </div>

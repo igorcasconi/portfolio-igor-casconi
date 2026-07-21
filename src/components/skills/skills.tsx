@@ -1,3 +1,5 @@
+"use client";
+
 import ReactIcon from "@/icons/react-icon";
 import { Progress } from "../progress";
 import JavascriptIcon from "@/icons/javascript-icon";
@@ -8,15 +10,19 @@ import JavaIcon from "@/icons/java-icon";
 import XcodeIcon from "@/icons/xcode-icon";
 import TypescriptIcon from "@/icons/typescript-icon";
 import FlutterIcon from "@/icons/flutter-icon";
+import { useLanguage } from "@/contexts/language-context";
+import { skillsLocale } from "@/locales/skills";
 
 const Skills = () => {
+  const { language } = useLanguage();
+
   return (
     <div className="flex flex-col sm:mt-4 md:mt-10 lg:mt-32 xl:mt-24 justify-start w-full xl:px-40 lg:px-16 sm:px-4 ">
       <h3
         className="text-primary text-[45px] font-afacad font-medium text-center"
         id="skills"
       >
-        MINHAS SKILLS
+        {skillsLocale[language].sectionTitle}
       </h3>
 
       <div className="sm:box lg:flex flex-row">
@@ -82,18 +88,7 @@ const Skills = () => {
 
         <div className="sm:mt-4 md:mt-8 md:ml-4">
           <p className="text-white font-afacad font-regular text-[20px]">
-            Tenho sólida experiência com React Native para Android e iOS,
-            incluindo arquiteturas white-label (multi flavor/schemes),
-            organização de builds em larga escala e automação de CI/CD com
-            Fastlane e Bitrise. No front-end, trabalho com React, Next.js,
-            TypeScript, Redux e GraphQL, desenvolvendo arquiteturas escaláveis,
-            componentização e soluções alinhadas às boas práticas de engenharia.
-            Também possuo experiência com Firebase, Amazon SNS, Amazon Pinpoint
-            e conhecimentos em desenvolvimento Android nativo, ampliando minha
-            visão sobre arquitetura mobile e decisões técnicas. Sou Especialista
-            em Flutter pela DIO, fortalecendo minha experiência em
-            desenvolvimento multiplataforma, arquitetura e gerenciamento de
-            estado.
+            {skillsLocale[language].description}
           </p>
         </div>
       </div>

@@ -3,16 +3,20 @@ import Image from "next/image";
 
 import { Modal } from "../modal";
 import { DataModalPortfolio, DataModalPortfolioKey } from "./data-modal";
+import { useLanguage } from "@/contexts/language-context";
+import { portfolioDictionary } from "@/locales/portfolio";
 
 import { CheckIcon, LinkIcon } from "@heroicons/react/16/solid";
 import Link from "next/link";
 
 const Portfolio = () => {
+  const { language } = useLanguage();
   const [isModalOpen, setModalOpen] = useState<boolean>(false);
   const [itemModal, setItemModal] = useState<DataModalPortfolioKey>("az");
 
   const handleCloseModal = () => setModalOpen(false);
-  const dataModal = DataModalPortfolio[itemModal];
+  const dataModal = DataModalPortfolio[language][itemModal];
+  const dictionary = portfolioDictionary[language];
 
   const handleOpenModal = (item: DataModalPortfolioKey) => () => {
     setModalOpen(true);
@@ -25,7 +29,7 @@ const Portfolio = () => {
         className="text-primary text-[45px] font-afacad font-medium text-center"
         id="portfolio"
       >
-        PORTFÓLIO
+        {dictionary.sectionTitle}
       </h3>
 
       <div className="flex flex-row sm:items-center md:items-left lg:justify-center flex-wrap">
@@ -34,12 +38,26 @@ const Portfolio = () => {
           onClick={handleOpenModal("frigelar")}
         >
           <Image
-            src={DataModalPortfolio.frigelar.image}
-            alt="Aluno AZ"
+            src={DataModalPortfolio[language].frigelar.image}
+            alt="Frigelar"
             className="w-[150px] h-[150px] rounded-tr-md rounded-tl-md "
           />
           <h3 className="text-primary text-[20px] font-afacad font-bold">
-            {DataModalPortfolio.frigelar.title}
+            {DataModalPortfolio[language].frigelar.title}
+          </h3>
+        </div>
+
+        <div
+          className="w-[150px] h-[180px] bg-gray-800 flex flex-col items-center justify-between rounded-md cursor-pointer shadow-xl ml-6 mt-6"
+          onClick={handleOpenModal("scaffold")}
+        >
+          <Image
+            src={DataModalPortfolio[language].scaffold.image}
+            alt="Scaffold Education"
+            className="w-[150px] h-[150px] rounded-tr-md rounded-tl-md "
+          />
+          <h3 className="text-primary text-[20px] font-afacad font-bold">
+            {DataModalPortfolio[language].scaffold.title}
           </h3>
         </div>
 
@@ -48,12 +66,12 @@ const Portfolio = () => {
           onClick={handleOpenModal("az")}
         >
           <Image
-            src={DataModalPortfolio.az.image}
+            src={DataModalPortfolio[language].az.image}
             alt="Aluno AZ"
             className="w-[150px] h-[150px] rounded-tr-md rounded-tl-md "
           />
           <h3 className="text-primary text-[20px] font-afacad font-bold">
-            {DataModalPortfolio.az.title}
+            {DataModalPortfolio[language].az.title}
           </h3>
         </div>
 
@@ -62,12 +80,12 @@ const Portfolio = () => {
           onClick={handleOpenModal("atlas")}
         >
           <Image
-            src={DataModalPortfolio.atlas.image}
+            src={DataModalPortfolio[language].atlas.image}
             alt="Atlas"
             className="w-[150px] h-[150px] rounded-tr-md rounded-tl-md object-cover"
           />
           <h3 className="text-primary text-[20px] font-afacad font-bold">
-            {DataModalPortfolio.atlas.title}
+            {DataModalPortfolio[language].atlas.title}
           </h3>
         </div>
 
@@ -76,12 +94,12 @@ const Portfolio = () => {
           onClick={handleOpenModal("pay")}
         >
           <Image
-            src={DataModalPortfolio.pay.image}
+            src={DataModalPortfolio[language].pay.image}
             alt="Lex Pay"
             className="w-[150px] h-[150px] rounded-tr-md rounded-tl-md object-cover"
           />
           <h3 className="text-primary text-[20px] font-afacad font-bold">
-            {DataModalPortfolio.pay.title}
+            {DataModalPortfolio[language].pay.title}
           </h3>
         </div>
 
@@ -90,12 +108,12 @@ const Portfolio = () => {
           onClick={handleOpenModal("composify")}
         >
           <Image
-            src={DataModalPortfolio.composify.image}
+            src={DataModalPortfolio[language].composify.image}
             alt="Composify"
             className="w-[150px] h-[150px] rounded-tr-md rounded-tl-md object-cover"
           />
           <h3 className="text-primary text-[20px] font-afacad font-bold">
-            {DataModalPortfolio.composify.title}
+            {DataModalPortfolio[language].composify.title}
           </h3>
         </div>
 
@@ -104,12 +122,12 @@ const Portfolio = () => {
           onClick={handleOpenModal("ufc")}
         >
           <Image
-            src={DataModalPortfolio.ufc.image}
+            src={DataModalPortfolio[language].ufc.image}
             alt="UFC Fantasy"
             className="w-[150px] h-[150px] rounded-tr-md rounded-tl-md object-cover"
           />
           <h3 className="text-primary text-[20px] font-afacad font-bold">
-            {DataModalPortfolio.ufc.title}
+            {DataModalPortfolio[language].ufc.title}
           </h3>
         </div>
 
@@ -118,12 +136,12 @@ const Portfolio = () => {
           onClick={handleOpenModal("abc")}
         >
           <Image
-            src={DataModalPortfolio.abc.image}
+            src={DataModalPortfolio[language].abc.image}
             alt="Banco ABC"
             className="w-[150px] h-[150px] rounded-tr-md rounded-tl-md object-cover"
           />
           <h3 className="text-primary text-[20px] font-afacad font-bold">
-            {DataModalPortfolio.abc.title}
+            {DataModalPortfolio[language].abc.title}
           </h3>
         </div>
 
@@ -132,12 +150,12 @@ const Portfolio = () => {
           onClick={handleOpenModal("cereagro")}
         >
           <Image
-            src={DataModalPortfolio.cereagro.image}
+            src={DataModalPortfolio[language].cereagro.image}
             alt="Livro Caixa"
             className="w-[150px] h-[150px] rounded-tr-md rounded-tl-md object-cover"
           />
           <h3 className="text-primary text-[20px] font-afacad font-bold">
-            {DataModalPortfolio.cereagro.title}
+            {DataModalPortfolio[language].cereagro.title}
           </h3>
         </div>
 
@@ -146,12 +164,12 @@ const Portfolio = () => {
           onClick={handleOpenModal("digitalfavela")}
         >
           <Image
-            src={DataModalPortfolio.digitalfavela.image}
+            src={DataModalPortfolio[language].digitalfavela.image}
             alt="Livro Caixa"
             className="w-[150px] h-[150px] rounded-tr-md rounded-tl-md object-cover"
           />
           <h3 className="text-primary text-[20px] font-afacad font-bold">
-            {DataModalPortfolio.digitalfavela.title}
+            {DataModalPortfolio[language].digitalfavela.title}
           </h3>
         </div>
 
@@ -160,12 +178,12 @@ const Portfolio = () => {
           onClick={handleOpenModal("nano")}
         >
           <Image
-            src={DataModalPortfolio.nano.image}
+            src={DataModalPortfolio[language].nano.image}
             alt="Livro Caixa"
             className="w-[150px] h-[150px] rounded-tr-md rounded-tl-md object-cover"
           />
           <h3 className="text-primary text-[20px] font-afacad font-bold">
-            {DataModalPortfolio.nano.title}
+            {DataModalPortfolio[language].nano.title}
           </h3>
         </div>
 
@@ -174,12 +192,12 @@ const Portfolio = () => {
           onClick={handleOpenModal("livrocaixa")}
         >
           <Image
-            src={DataModalPortfolio.livrocaixa.image}
+            src={DataModalPortfolio[language].livrocaixa.image}
             alt="Livro Caixa"
             className="w-[150px] h-[150px] rounded-tr-md rounded-tl-md object-cover"
           />
           <h3 className="text-primary text-[20px] font-afacad font-bold">
-            {DataModalPortfolio.livrocaixa.title}
+            {DataModalPortfolio[language].livrocaixa.title}
           </h3>
         </div>
       </div>
@@ -187,7 +205,7 @@ const Portfolio = () => {
       <div className="flex flex-row mt-4 justify-center">
         <Link href="https://github.com/igorcasconi/" target="_blank">
           <p className="text-white font-afacad font-medium mt-2 text-[18px] sm:text-[24px] hover:text-primary text-center">
-            Para ver mais projetos, clique aqui para acessar meu GitHub
+            {dictionary.moreProjectsCta}
           </p>
         </Link>
       </div>
@@ -211,8 +229,12 @@ const Portfolio = () => {
               {dataModal.description}
             </p>
 
+            <p className="text-primary font-afacad font-medium mt-2">
+              Stack: {dataModal.stack}
+            </p>
+
             <p className="text-primary font-afacad font-bold text-[18px] mt-4">
-              Trabalho desenvolvido
+              {dictionary.workDoneLabel}
             </p>
             <p className="text-gray-900 font-afacad font-medium">
               {dataModal.work}
@@ -232,7 +254,7 @@ const Portfolio = () => {
                 <div className="flex items-center">
                   <LinkIcon className="h-[20px] w-[20px] text-primary mt-4" />
                   <p className="text-primary font-afacad font-bold text-[18px] mt-4">
-                    Acesse aqui o site
+                    {dictionary.visitSiteLabel}
                   </p>
                 </div>
               </Link>
